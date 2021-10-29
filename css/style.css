@@ -8,9 +8,47 @@
 html {
     font-size: 100%;
 }
+
+body {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+:root {
+    --main-bg-color:#000000;
+    --navbar-color:#1B1B1B;
+    --share-btn-color:#3CA000;
+    --bg-color-end:#4A4A4A;
+    --end-btn-color:#B90A0F;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+}
+
+.navbar .fas {
+    font-size: 2em;
+}
+
+.triangle {
+    height: 100%;
+    font-size: 0.5em;
+}
 /* commons */
 
 /* header */
+
+header {
+    width: 100%;
+    height: 10%;
+    min-height: 5%;
+}
 
 .header-btn {
     display: flex;
@@ -48,3 +86,86 @@ html {
     width: 1.5em;
     text-align: center;
 }
+
+/* header */
+
+/* main */
+
+main {
+    height:calc(100vh - 20%);
+    overflow: scroll;
+    min-height: 5%;
+}
+
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.users-container .users {
+    position: relative;
+}
+
+.users-container .users img {
+    margin: 0.5em 0.3em;
+}
+
+.users-container .users .users-name {
+    position: absolute;
+    bottom:10%;
+    left:0.3em;
+    background-color: rgba(158, 156, 156, 0.836);
+    padding: 0.2em;
+    color: white;
+}
+
+/* main */
+
+/* navbar */
+
+footer {
+    height: 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-color);
+    height: 100%;
+}
+
+.navbar [class*= "btn" ] {
+    display: flex;
+    justify-content: space-around;
+    min-height: 5%;
+}
+
+.navbar .audio-video-controls {
+    width: 12%;
+}
+
+.navbar .users-cmd {
+    width: 50%;
+}
+
+.navbar .users-cmd .users-btn {
+    justify-content: space-around;
+}
+
+.navbar .exit-controls-btn {
+    width: 8%;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    background-color: var(--bg-color-end);
+    color: var(--end-btn-color);
+}
+
+.navbar .users-cmd .users-btn .fas.fa-share-square {
+    color: var(--share-btn-color);
+}
+
+
+/* navbar */
