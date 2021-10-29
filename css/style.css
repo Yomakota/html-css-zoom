@@ -1,0 +1,50 @@
+/* commons */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+/* commons */
+
+/* header */
+
+.header-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    filter: invert(1);
+    padding: 0.5em;
+}
+
+.speaker-icon {
+    display: flex;
+    margin-right: 0.5em;
+    align-items: center;
+    background-color: grey;
+    padding: 0.2em;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.speaker-icon img {
+    width: 1em;
+    margin-right: 0.2em;
+}
+
+.full-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    padding: 0.3em 0;
+    border-radius: 3px;  
+}
+
+.full-screen i {
+    width: 1.5em;
+    text-align: center;
+}
