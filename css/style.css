@@ -93,7 +93,7 @@ header {
 
 main {
     height:calc(100vh - 20%);
-    overflow: scroll;
+    overflow-y: scroll;
     min-height: 5%;
 }
 
